@@ -1,0 +1,303 @@
+/* CAI DAT CHUNG */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f7f7f3;
+    color: #29332f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+a {
+    color: #536b57;
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* DAU TRANG VA MENU */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e1e5df;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.logo {
+    color: #29332f;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav a {
+    margin-left: 18px;
+    color: #68736a;
+    font-size: 13px;
+}
+
+/* CAC PHAN NOI DUNG */
+section {
+    padding: 45px 0;
+    border-bottom: 1px solid #e1e5df;
+}
+
+.section-label {
+    color: #71836f;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin: 5px 0;
+    font-size: 36px;
+}
+
+h2 {
+    margin: 5px 0 10px;
+    font-size: 27px;
+}
+
+h3 {
+    margin: 0 0 7px;
+    font-size: 16px;
+}
+
+p {
+    margin-top: 0;
+}
+
+.section-description {
+    margin-bottom: 22px;
+    color: #727b73;
+}
+
+/* PHAN GIOI THIEU */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.role {
+    color: #71836f;
+}
+
+.profile-photo {
+    width: 65px;
+    height: 65px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-text {
+    max-width: 680px;
+    margin-top: 20px;
+    color: #5f6961;
+}
+
+.info-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    border-top: 1px solid #e1e5df;
+    border-bottom: 1px solid #e1e5df;
+}
+
+.info-item {
+    width: 25%;
+    padding: 12px;
+}
+
+.info-item p {
+    margin-bottom: 3px;
+    color: #858e85;
+    font-size: 12px;
+}
+
+.info-item strong {
+    font-size: 13px;
+}
+
+/* PHAN KY NANG */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-card {
+    width: calc(50% - 6px);
+    padding: 16px;
+    background-color: #ffffff;
+    border: 1px solid #e1e5df;
+}
+
+.skill-card p {
+    margin-bottom: 8px;
+    color: #727b73;
+    font-size: 13px;
+}
+
+.skill-card span {
+    color: #71836f;
+    font-size: 12px;
+}
+
+.soft-skills {
+    margin-top: 20px;
+}
+
+.soft-skills p {
+    color: #727b73;
+}
+
+/* PHAN HOC VAN */
+.education-item {
+    display: flex;
+    gap: 25px;
+    padding: 20px 0;
+    border-top: 1px solid #e1e5df;
+}
+
+.education-year {
+    width: 120px;
+    flex-shrink: 0;
+    color: #71836f;
+    font-weight: bold;
+}
+
+.education-item p {
+    margin-bottom: 5px;
+    color: #727b73;
+}
+
+/* PHAN SO THICH */
+.interest-list {
+    display: flex;
+    gap: 12px;
+}
+
+.interest-card {
+    width: 33.33%;
+    padding: 16px;
+    background-color: #ffffff;
+    border: 1px solid #e1e5df;
+}
+
+.interest-card p {
+    margin-bottom: 0;
+    color: #727b73;
+    font-size: 13px;
+}
+
+/* PHAN LIEN HE */
+.contact-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 22px;
+    background-color: #eef1eb;
+}
+
+.contact-box p {
+    margin-bottom: 5px;
+}
+
+.github-label {
+    margin-top: 15px;
+}
+
+/* CHAN TRANG */
+footer {
+    background-color: #ffffff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    color: #727b73;
+    font-size: 12px;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+/* DIEU CHINH KHI XEM TREN DIEN THOAI */
+@media (max-width: 650px) {
+    .header-content {
+        display: block;
+    }
+
+    nav {
+        margin-top: 12px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 12px 5px 0;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .profile-photo {
+        width: 58px;
+        height: 58px;
+    }
+
+    .info-item {
+        width: 50%;
+    }
+
+    .skill-card {
+        width: 100%;
+    }
+
+    .education-item {
+        display: block;
+    }
+
+    .education-year {
+        width: auto;
+    }
+
+    .interest-list {
+        display: block;
+    }
+
+    .interest-card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contact-box {
+        display: block;
+    }
+
+    .contact-box > div + div {
+        margin-top: 20px;
+    }
+
+    .footer-content {
+        display: block;
+    }
+}
